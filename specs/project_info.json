@@ -1,0 +1,38 @@
+{
+  "projectName": "Browser Extension Security Auditor",
+  "category": "Cybersecurity / Browser Extensions",
+  "author": "Güven Arda YILMAZ",
+  "version": "1.0.0",
+  "description": "Lightshot Chrome uzantısının manifest izinleri ve kod yapısı üzerinden güvenlik analizi, risk tespiti ve öneriler.",
+  "targets": {
+    "extensionName": "Lightshot Screenshot Tool",
+    "platform": "Google Chrome",
+    "extensionVersion": "7.0.1",
+    "source": "Chrome Web Store"
+  },
+  "deliverables": [
+    "docs/audit-report.md",
+    "src/lightshot-extension (kaynak dosyalar)",
+    "researchs/gemini-fast/research.gemini-fast.result.md",
+    "researchs/gemini-fast/research.gemini-fast.prompt.md",
+    "researchs/gemini-fast/research.gemini-fast.sources.md",
+    "researchs/gemini-fast/research.gemini-fast.chat_link.txt"
+  ],
+  "requirements": {
+    "os": "Windows 10/11",
+    "tools": [
+      "Git",
+      "PowerShell",
+      "VS Code",
+      "Google Chrome"
+    ],
+    "repository": "github.com/guvenyilmaz0/browser-extension-security"
+  },
+  "securityFocus": [
+    "manifest.json izin analizi",
+    "host permissions ve cookies riski",
+    "content scripts / service worker değerlendirmesi",
+    "en az yetki (least privilege) önerileri",
+    "supply-chain ve güncelleme riskleri"
+  ]
+}
