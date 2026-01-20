@@ -136,11 +136,6 @@ This bypasses network encryption protections.
 
 DOM clobbering manipulates global JavaScript variables through injected HTML elements.
 
-Example:
-
-```html
-<a id="extensionConfig" href="https://attacker.com/malicious.js"></a>
-
 
 #### 3.3.1 Mitigation Strategies
 
